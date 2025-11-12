@@ -149,14 +149,14 @@ outputs:
 
   - name: "PdfUnite"
     type: pdfunite
-    dir: Schematic
+    dir: output/Schematic
     options:
       use_external_command: true
       # [string='%f-%i%I%v.%x'] Name for the generated PDF (%i=name of the output %x=pdf). Affected by global options
-      output: "output/combined.pdf"
+      output: "combined.pdf"
       # [list(dict)=[]] Which files will be included
       outputs:
-        - source: "output/Schematic/*.pdf"
+        - source: "Schematic/*.pdf"
 
   # JLCPCB Manufacturing stuff
   - name: JLCPCB_gerbers
