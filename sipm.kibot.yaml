@@ -28,12 +28,12 @@ outputs:
   - name: "print_sch"
     comment: "Schematic PDF"
     type: pdf_sch_print
-    dir: Schematic
+    dir:  output/Schematic
 
   - name: "print_board"
     comment: "Print Top and Bottom layers"
     type: pcb_print
-    dir: Schematic
+    dir:  output/Schematic
     options:
       format: "PDF"
       scaling: 1.2
@@ -153,16 +153,16 @@ outputs:
     options:
       use_external_command: true
       # [string='%f-%i%I%v.%x'] Name for the generated PDF (%i=name of the output %x=pdf). Affected by global options
-      output: "combined.pdf"
+      output: "output/combined.pdf"
       # [list(dict)=[]] Which files will be included
       outputs:
-        - source: "Schematic/*.pdf"
+        - source: "output/Schematic/*.pdf"
 
   # JLCPCB Manufacturing stuff
   - name: JLCPCB_gerbers
     comment: Gerbers compatible with JLCPCB
     type: gerber
-    dir: JLCPCB
+    dir: output/JLCPCB
     options: &gerber_options
       exclude_edge_layer: true
       exclude_pads_from_silkscreen: true
@@ -196,7 +196,7 @@ outputs:
   - name: JLCPCB_drill
     comment: Drill files compatible with JLCPCB
     type: excellon
-    dir: JLCPCB
+    dir: output/JLCPCB
     options:
       pth_and_npth_single_file: false
       pth_id: '-PTH'
@@ -209,10 +209,10 @@ outputs:
   - name: 'JLCPCB_bom'
     comment: "BoM for JLCPCB"
     type: bom
-    dir: JLCPCB
+    dir: output/JLCPCB
     options:
       output: '%f_%i_jlc.%x'
-      exclude_filter: 'only_jlc_parts'
+      # exclude_filter: 'only_jlc_parts'
       ref_separator: ','
       columns:
         - field: Value
@@ -230,7 +230,7 @@ outputs:
   - name: JLCPCB
     comment: ZIP file for JLCPCB
     type: compress
-    dir: JLCPCB
+    dir: output/JLCPCB
     options:
       files:
         - from_output: JLCPCB_gerbers
@@ -243,7 +243,7 @@ outputs:
   # Misc
   - name: "iBom"
     type: ibom
-    dir: Bom
+    dir: output/Bom
   - name: "BoardView"
     type: boardview
-    dir: Boardview
+    dir: output/Boardview
