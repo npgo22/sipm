@@ -28,13 +28,13 @@ jobs:
     - uses: INTI-CMNB/KiBot@v2_dk9
       with:
         # Required - kibot config file
-        config: ThermoBoard.kibot.yaml
+        config: sipm.kibot.yaml
         # optional - prefix to output defined in config
         dir: output
         # optional - schematic file
-        schema: 'ThermoBoard.kicad_sch'
+        schema: 'sipm.kicad_sch'
         # optional - PCB design file
-        board: 'ThermoBoard.kicad_pcb'
+        board: 'sipm.kicad_pcb'
         # install3D: YES 
         # cache3D: YES
     - name: upload results
