@@ -1,0 +1,5 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "libsipm")(type "KiCad")(uri "${KIPRJMOD}/lib/libsipm.pretty")(options "")(descr ""))
+  (lib (name "external")(type "KiCad")(uri "${KIPRJMOD}/external/APRLPrints/APRLPrints.pretty")(options "")(descr ""))
+)

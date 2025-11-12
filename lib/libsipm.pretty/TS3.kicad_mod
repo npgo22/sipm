@@ -1,0 +1,101 @@
+(footprint "TS3"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0 -0.5 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "52247238-7cfb-42ed-b024-c1c5fffe92a3")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "TS3"
+		(at 0 1 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "bf48e499-8035-4514-b2c1-7c23b3343d0d")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "fa38fec0-7f7a-48c9-a316-d2df1bfcdeab")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "4d38454b-0fbc-459d-8260-41fbdd67ec73")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_text user "${REFERENCE}"
+		(at 0 2.5 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "f68c99c1-e70d-4b2f-92de-9ce5cb2cb4c5")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd roundrect
+		(at 1.15 1.45)
+		(size 1.1 1.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.15)
+		(thermal_bridge_angle 45)
+		(uuid "38d71c56-85a7-4179-9a88-b382fd140824")
+	)
+	(pad "2" smd roundrect
+		(at 0 -1.45)
+		(size 1.6 1.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.15)
+		(thermal_bridge_angle 45)
+		(uuid "111e9737-2dad-4a37-ad07-dde6528e0001")
+	)
+	(pad "3" smd roundrect
+		(at -1.15 1.45)
+		(size 1.1 1.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.15)
+		(thermal_bridge_angle 45)
+		(uuid "8b080e76-11de-4fbc-925a-768a011726a6")
+	)
+	(group ""
+		(uuid "c2624de1-3664-4c9e-b249-91a2b619f158")
+		(members "111e9737-2dad-4a37-ad07-dde6528e0001" "38d71c56-85a7-4179-9a88-b382fd140824"
+			"8b080e76-11de-4fbc-925a-768a011726a6"
+		)
+	)
+	(embedded_fonts no)
+)
