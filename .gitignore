@@ -11,7 +11,7 @@ BoM
 kibot*
 **/*lck
 *_prl
-output
+output/*
 
 jlcpcb
 jlcpcb/*
